@@ -9,28 +9,54 @@
 <body>
  <h1>Principais Formatações</h1> 
  <h2> Negrito / Destaque </h2>  
- <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B (não semântica)</p>
- <p> Nesta frase, tenho um <strong>termo em destaque </strong>usando a tag STRONG (semântica)</p>
+ <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt; b&gt; e &lt; /b&gt; (não semântica)</p>
+ <p> Nesta frase, tenho um <strong>termo em destaque </strong>usando a tag &lt; strong&gt; e &lt;/strong&gt; (semântica)</p>
 <h2> Itálico / Ênfase</h2>
-<p>Nesta frase,temos um <i>termo itálico</i> usando a tag I (não semântca)</p>
-<P>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</P>
-<p>Para destacar o texto que queremos demarcar,<mark>  como se estívessemos usando uma caneta marcador.</mark> </p>
-<p>Para deixar <small> o texto menor</small> ultilizamos a tag SMALL. </p>
-<p>A tag DEL  que significa que <del>o texto está ali,pode ser até lido,mas deve ser desconsiderado pelo o leitor</del>      </p>
-<p>  O texto inserido é o exato oposto do <del>texto deletado</del> que vimos anteriormente. Nesse caso, se colocarmos um texto qualquer dentro da taga INC, estamos dizendo que o <ins> texto está ali,deve ser lido e você deve prestar atenção nele.</ins> </p>
+<p>Nesta frase,temos um <i>termo itálico</i> usando a tag &lt; i&gt; e &lt: /i&gt; (não semântca)</p>
+<P>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt; em&gt; e &lt; /em&gt; (semântica)</P>
+<h2> Você sabe usar o marca texto em HTML?</h2>
+<p>Para destacar o texto que queremos demarcar,<mark>  como se estívessemos usando uma caneta marcador.</mark>, ultilizamos a tag &lt; mark &gt; e &lt;/mark&gt; </p>
+<p>Para deixar <small> o texto menor</small> ultilizamos a tag &lt;small&gt; e &lt; /small&gt;. </p>
+<p>A tag &lt;del&gt; e &lt;/del&gt;  que significa que <del>o texto está ali,pode ser até lido,mas deve ser desconsiderado pelo o leitor</del>      </p>
+<p>  O texto inserido é o exato oposto do <del>texto deletado</del> que vimos anteriormente. Nesse caso, se colocarmos um texto qualquer dentro da taga &lt; ins&gt; e &lt; /ins&gt;, estamos dizendo que o <ins> texto está ali,deve ser lido e você deve prestar atenção nele.</ins> </p>
 
 <h2> Textos Sobrescrito e Subscrito</h2>
-<p> <sub>H</sub> 2 <sub>O</sub> usando a tag SUB </p>
-<p>  <sup>X</sup> 2  usando a tag SUP</p>
+<p> <strong><sub>H</sub> 2 <sub>O</sub></strong> usando a tag &lt;sub&gt; e &lt /sub&gt;</p>
+<p>  <sup>X</sup> <sub><strong>2</strong></sub>  usando a tag &lt; sup&gt; e &lt; /sup&gt; e <sub>X</sub> <strong>2</strong> usando a tag &lt; sub&gt; e &lt; /sub&</p>
+<P> Onde mode ser usando para diminuir o número "2" em CSS</P>
 
-<p> Trechos de Códigos</p>
-<h1> Exemplo de código Python</h1>
-<code>
- num = int(input('Digite um númerp'))if num % 2==0:   
+<H1> Trechos de Códigos</H1>
+<h2> Exemplo de código Python</h2>
+<h3> Ultilizando a tag &lt; code&gt; e &lt; /code&gt;</h3>
+<code> num= int(input('Digite um número'))if num % 2 ==0:
+    print(f'O número{num} é par)
+    else:
+    print (f'O número {num} é ímpar')
+    print ('FIM DO PROGRAMA')
+     </code>
 
-</code>
+     <h3>Ultilizando a tag &lt;pre&gt; + &lt;code&gt; e &lt; /pre&gt; &lt; /code&gt; </h3>
+     <pre><code>num= int(input('Digite um número'))if num % 2 ==0:
+        print(f'O número{num} é par)
+        else:
+        print (f'O número {num} é ímpar')
+        print ('FIM DO PROGRAMA')
+                    
+     </code></pre>
 
+     <h1><strong><em> As tags unidas jamais serão vencidas! </em></strong></h1>
+        <p> As tags acima são &lt;strong&gt; e &lt;em&gt;</p>
+<h2> Citações</h2>
+<p> Podemos definir programação como o ato de escrever instruções para que máquinas executem uma determinada função ou várias funções encadeadas. Ou seja, a partir de um conjunto de códigos, as pessoas se comunicam com os computadores e os configuram para a execução de alguma tarefa específica.</p>
+<q> As tags &lt; q&gt; e &lt; /q&gt;  é ultilizada quando queremos colocar uma citação no meio do parágrafo.</q>
 
+<h3> Para ultilizar a citação deslocada, podemos ultilizar a tag &lt;blockquote&gt; e &lt;/blockquote&gt;</h3>   
+<blockquote cite="https://blog.betrybe.com/tecnologia/aprenda-tudo-sobre-programacao/">Neste artigo, abordaremos os principais conceitos e ideias associadas à arte de programar computadores na área de TI. 
+    Falaremos, inclusive, sobre as profissões que ganham bem na área da TI</blockquote>
 
+  <p> Eu estou estudando <abbr title="Hyper Text Markup Laguage">HTML</abbr> para criar sites</p> 
+  <h2> Texto invertido</h2>
+  <bdo dir="rtl">  Este texto todo está invertido no formato RIGHT - TO - LEFT.</bdo>
+  
 </body>
 </html>
